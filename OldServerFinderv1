@@ -1,5 +1,9 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
 
+-- a simple old server finder in grow a garden. made by anos1879 (in discord)
+-- u can modify this however you want! :)
+-- credits to infinite yield for serverhop function
+
 local function prompt(title, text)
     local ScreenGui = Instance.new("ScreenGui")
     local Frame = Instance.new("Frame")
@@ -103,7 +107,7 @@ local function prompt(title, text)
 
     NoCorner.CornerRadius = UDim.new(0, 8)
     NoCorner.Parent = NoButton
-    
+
     local CloseButton = Instance.new("TextButton")
     CloseButton.Name = "CloseButton"
     CloseButton.Parent = Frame
@@ -155,26 +159,27 @@ local function prompt(title, text)
     return choice
 end
 
-local o = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/Load/refs/heads/main/Gui.lua"))()
-function nt(n, c)
-    o:MakeNotification({
-        Name = n,
-        Content = c,
-        Image = "rbxassetid://4483345998",
-        Time = 6
+local function nt(n, c)
+    local StarterGui = game:GetService("StarterGui")
+    StarterGui:SetCore("SendNotification", {
+        Title = n,
+        Text = c,
+        Icon = "rbxassetid://4483345998",
+        Duration = 6
     })
 end
+
 _G.patched = false
 if _G.patched then
-   nt("PATCHED","Dupe Sheckles has been patched and it won't work now.")
-   nt("NOTICE","We'll come back soon once a new bug or script has been found!")
-   return
+    nt("PATCHED","Dupe Sheckles has been patched and it won't work now.")
+    nt("NOTICE","We'll come back soon once a new bug or script has been found!")
+    return
 end
 
 local gagid = 126884695634066
 if game.PlaceId ~= gagid then
-   nt("Wrong Game", "This script is for Grow a Garden only!")
-   return
+    nt("Wrong Game", "This script is for Grow a Garden only!")
+    return
 end
 local q = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport) or function() end
 local shf = [[
@@ -195,7 +200,6 @@ local function checkBloodMoon()
     end
     return false
 end
-
 
 local lastHopAttempt = 0
 local function sh()
