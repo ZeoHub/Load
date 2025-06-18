@@ -65,7 +65,7 @@ buttonStroke.Parent = button
 
 local function runMenaceHub()
     pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/M-E-N-A-C-E/Menace-Hub/refs/heads/main/Old%20Server%20Finder%20Grow%20a%20Garden", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/Load/refs/heads/main/OldServerFinderv1", true))()
     end)
 end
 
