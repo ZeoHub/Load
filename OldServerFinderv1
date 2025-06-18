@@ -1,5 +1,6 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
 
+-
 local function prompt(title, text)
     local ScreenGui = Instance.new("ScreenGui")
     local Frame = Instance.new("Frame")
