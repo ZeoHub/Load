@@ -11,6 +11,43 @@ local playerGui = player:WaitForChild("PlayerGui")
 local oldGui = playerGui:FindFirstChild("PersistentOldServerFinderGui")
 if oldGui then oldGui:Destroy() end
 
+-- Cooldown setup (per session)
+local COOLDOWN_TIME = 54 * 60 -- 54 minutes (in seconds)
+local cooldownKey = "OldServerFinder_LastHop"
+local lastHopTime = 0
+
+-- Try to persist cooldown state between serverhops (weak, but helps for non-terminated exploits)
+pcall(function()
+    if getgenv then
+        getgenv()._oldserverfinder = getgenv()._oldserverfinder or {}
+        lastHopTime = getgenv()._oldserverfinder[cooldownKey] or 0
+    end
+end)
+
+local function setLastHopTime(t)
+    lastHopTime = t
+    pcall(function()
+        if getgenv then
+            getgenv()._oldserverfinder = getgenv()._oldserverfinder or {}
+            getgenv()._oldserverfinder[cooldownKey] = lastHopTime
+        end
+    end)
+end
+
+local function timeSinceLastHop()
+    return os.time() - (lastHopTime or 0)
+end
+
+local function cooldownRemaining()
+    local remain = COOLDOWN_TIME - timeSinceLastHop()
+    return math.max(remain, 0)
+end
+
+local function formatMinsSecs(secs)
+    local mins = math.floor(secs / 60)
+    local s = secs % 60
+    return string.format("%02d:%02d", mins, s)
+end
 
 local function prompt(title, text)
     local ScreenGui = Instance.new("ScreenGui")
@@ -116,7 +153,7 @@ local function prompt(title, text)
 
     NoCorner.CornerRadius = UDim.new(0, 8)
     NoCorner.Parent = NoButton
-    
+
     local CloseButton = Instance.new("TextButton")
     CloseButton.Name = "CloseButton"
     CloseButton.Parent = Frame
@@ -196,7 +233,6 @@ if game.PlaceId ~= gagid then
     return
 end
 
-local queueTeleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport) or function() end
 local oldVersionMax = 1279 -- servers with this place version or lower are considered old
 local currentVersion = game.PlaceVersion
 
@@ -222,6 +258,12 @@ end
 
 local lastHopAttempt = 0
 local function sh()
+    -- Cooldown logic: prevent running if < 54 min since last hop
+    local remain = cooldownRemaining()
+    if remain > 0 then
+        nt("Cooldown", "You must wait " .. formatMinsSecs(remain) .. " before hopping again!")
+        return false
+    end
     if os.time() - lastHopAttempt < 5 then
         nt("Please Wait", "Server hop cooldown...")
         return false
@@ -278,6 +320,7 @@ local function sh()
         task.wait(1)
         nt("Teleporting", "Joining server with old version...")
         task.wait(0.5)
+        setLastHopTime(os.time())
         tp:TeleportToPlaceInstance(game.PlaceId, list[math.random(#list)])
         return true
     else
