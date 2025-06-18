@@ -1,3 +1,15 @@
+
+
+if not game:IsLoaded() then game.Loaded:Wait() end
+
+-- Remove duplicate GUI on respawn/rejoin
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+if playerGui:FindFirstChild("OldServerFinderGui") then
+    playerGui.OldServerFinderGui:Destroy()
+end
+
+
 -- Create the ScreenGui
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = "OldServerFinderGui"
