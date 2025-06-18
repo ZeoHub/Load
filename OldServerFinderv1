@@ -1,10 +1,5 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
 
--- a simple old server finder in grow a garden. made by anos1879 (in discord)
--- u can modify this however you want! :)
--- credits to infinite yield for serverhop function
--- sub to my channel:
-
 local function prompt(title, text)
     local ScreenGui = Instance.new("ScreenGui")
     local Frame = Instance.new("Frame")
