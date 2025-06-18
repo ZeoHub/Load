@@ -4,7 +4,6 @@ if not game:IsLoaded() then game.Loaded:Wait() end
 -- u can modify this however you want! :)
 -- credits to infinite yield for serverhop function
 -- sub to my channel:
-setclipboard("https://youtube.com/@menace_on_top_fr")
 
 local function prompt(title, text)
     local ScreenGui = Instance.new("ScreenGui")
