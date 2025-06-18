@@ -1,7 +1,5 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
 
-task.wait(60)  -- Wait for 60 seconds before running the main script
-
 -- Queue this GUI script to run on every teleport/serverhop
 local guiSource = "https://raw.githubusercontent.com/ZeoHub/Load/refs/heads/main/OldServerFinder.lua"
 -- (rest of your script ...)
