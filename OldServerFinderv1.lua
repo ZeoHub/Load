@@ -12,7 +12,7 @@ local oldGui = playerGui:FindFirstChild("PersistentOldServerFinderGui")
 if oldGui then oldGui:Destroy() end
 
 -- Cooldown setup (per session)
-local COOLDOWN_TIME = 54 * 60 -- 54 minutes (in seconds)
+local COOLDOWN_TIME = 2 * 60 -- 54 minutes (in seconds)
 local cooldownKey = "OldServerFinder_LastHop"
 local lastHopTime = 0
 
