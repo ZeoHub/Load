@@ -16,7 +16,7 @@ local oldGui = playerGui:FindFirstChild("PersistentOldServerFinderGui")
 if oldGui then oldGui:Destroy() end
 
 -- Cooldown setup (per session)
-local COOLDOWN_TIME = 1 * 5 -- 54 minutes (in seconds)
+local COOLDOWN_TIME = 60 -- 54 minutes (in seconds)
 local cooldownKey = "OldServerFinder_LastHop"
 local lastHopTime = 0
 
@@ -244,7 +244,7 @@ local shf = ([[
     if not _G.exeonce then
         _G.exeonce = true
         repeat task.wait() until game:IsLoaded()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/Load/refs/heads/main/OldServerFinderv1.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/Load/refs/heads/main/OldServerFinderV1.lua", true))()
     end
 ]]):format(oldVersionMax)
 queueTeleport(shf)
