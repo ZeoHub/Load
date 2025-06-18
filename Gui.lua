@@ -1,8 +1,5 @@
 -- Draggable Orion Lib for both pc and mobile!
 
-task.wait(1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/Load/refs/heads/main/OldServerFinder"))()
-
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
