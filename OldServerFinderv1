@@ -1,6 +1,5 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
 
--
 local function prompt(title, text)
     local ScreenGui = Instance.new("ScreenGui")
     local Frame = Instance.new("Frame")
@@ -16,7 +15,8 @@ local function prompt(title, text)
     local NoCorner = Instance.new("UICorner")
     local Glow = Instance.new("ImageLabel")
 
-    ScreenGui.Parent = game:GetService("CoreGui") or game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    local parentGui = (pcall(function() return game:GetService("CoreGui") end) and game:GetService("CoreGui")) or game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    ScreenGui.Parent = parentGui
     ScreenGui.Name = "BloodmoonPrompt"
     ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     ScreenGui.ResetOnSpawn = false
@@ -120,7 +120,22 @@ local function prompt(title, text)
     CloseCorner.CornerRadius = UDim.new(0, 6)
     CloseCorner.Parent = CloseButton
 
+    local choice = false
+    local done = false
+
     CloseButton.MouseButton1Click:Connect(function()
+        choice = false
+        done = true
+        ScreenGui:Destroy()
+    end)
+    YesButton.MouseButton1Click:Connect(function()
+        choice = true
+        done = true
+        ScreenGui:Destroy()
+    end)
+    NoButton.MouseButton1Click:Connect(function()
+        choice = false
+        done = true
         ScreenGui:Destroy()
     end)
 
@@ -138,56 +153,52 @@ local function prompt(title, text)
     Glow.SliceScale = 0.24
     Glow.ImageTransparency = 0.8
 
-    local choice = false
-    local connection1 = YesButton.MouseButton1Click:Connect(function()
-        choice = true
-        ScreenGui:Destroy()
-    end)
-
-    local connection2 = NoButton.MouseButton1Click:Connect(function()
-        choice = false
-        ScreenGui:Destroy()
-    end)
-
-    while ScreenGui.Parent do
-        task.wait()
-    end
-
+    repeat task.wait() until done or not ScreenGui.Parent
     return choice
 end
 
 local o = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/Load/refs/heads/main/Gui.lua"))()
 function nt(n, c)
-    o:MakeNotification({
-        Name = n,
-        Content = c,
-        Image = "rbxassetid://4483345998",
-        Time = 6
-    })
+    if o and o.MakeNotification then
+        o:MakeNotification({
+            Name = n,
+            Content = c,
+            Image = "rbxassetid://4483345998",
+            Time = 6
+        })
+    else
+        warn("[Notification]", n, c)
+    end
 end
-_G.patched = false
+
+_G.patched = _G.patched or false
 if _G.patched then
-   nt("PATCHED","Dupe Sheckles has been patched and it won't work now.")
-   nt("NOTICE","We'll come back soon once a new bug or script has been found!")
-   return
+    nt("PATCHED","Dupe Sheckles has been patched and it won't work now.")
+    nt("NOTICE","We'll come back soon once a new bug or script has been found!")
+    return
 end
 
 local gagid = 126884695634066
 if game.PlaceId ~= gagid then
-   nt("Wrong Game", "This script is for Grow a Garden only!")
-   return
+    nt("Wrong Game", "This script is for Grow a Garden only!")
+    return
 end
-local q = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport) or function() end
-local shf = [[
+
+local queueTeleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport) or function() end
+local oldVersionMax = 1279 -- servers with this place version or lower are considered old
+local currentVersion = game.PlaceVersion
+
+local shf = ([[
     if not _G.exeonce then
         _G.exeonce = true
         repeat task.wait() until game:IsLoaded()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeoHub/Load/refs/heads/main/OldServerFinderv1", true))()
     end
-]]
-q(shf)
+]]):format(oldVersionMax)
+queueTeleport(shf)
+
 local function checkBloodMoon()
-    local shrine = workspace.Interaction.UpdateItems:FindFirstChild("BloodMoonShrine")
+    local shrine = workspace:FindFirstChild("Interaction") and workspace.Interaction:FindFirstChild("UpdateItems") and workspace.Interaction.UpdateItems:FindFirstChild("BloodMoonShrine")
     if shrine and shrine:IsA("Model") then
         local part = shrine.PrimaryPart or shrine:FindFirstChildWhichIsA("BasePart")
         if part then
@@ -196,7 +207,6 @@ local function checkBloodMoon()
     end
     return false
 end
-
 
 local lastHopAttempt = 0
 local function sh()
@@ -207,7 +217,7 @@ local function sh()
     lastHopAttempt = os.time()
 
     local req = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
-    if not req then 
+    if typeof(req) ~= "function" then 
         nt("Error", "No HTTP request function available")
         return false
     end
@@ -220,6 +230,11 @@ local function sh()
         Method = "GET"
     })
 
+    if not res then
+        nt("Error", "HTTP request failed")
+        return false
+    end
+
     if res.StatusCode == 429 then
         nt("Rate Limited", "Please wait a few minutes before trying again")
         return false
@@ -228,7 +243,7 @@ local function sh()
         return false 
     end
 
-    local success, data = pcall(hs.JSONDecode, hs, res.Body)
+    local success, data = pcall(function() return hs:JSONDecode(res.Body) end)
     if not success or not data or not data.data then 
         nt("Error", "Failed to read server data")
         return false
@@ -240,34 +255,31 @@ local function sh()
             local playing = tonumber(v.playing) or 0
             local max = tonumber(v.maxPlayers) or 100
             local placeVersion = tonumber(v.placeVersion) or 0
-            if playing < max and placeVersion == 1347 then
+            if playing < max and placeVersion <= oldVersionMax then
                 table.insert(list, v.id)
             end
         end
     end
 
     if #list > 0 then
-        nt("Server Hop", "Found "..#list.." servers with version ≤ 1279")
+        nt("Server Hop", "Found "..#list.." servers with version ≤ "..oldVersionMax)
         task.wait(1)
         nt("Teleporting", "Joining server with old version...")
         task.wait(0.5)
         tp:TeleportToPlaceInstance(game.PlaceId, list[math.random(#list)])
         return true
     else
-        nt("No Servers", "No available servers with version ≤ 1279 found")
+        nt("No Servers", "No available servers with version ≤ "..oldVersionMax.." found")
         return false
     end
 end
 
-local v = 1347
-local isOld = game.PlaceVersion == v
-
-if isOld then
+if currentVersion <= oldVersionMax then
     nt("Perfect Server!", "This server supports the Infinite Sheckles Script!")
 else
-    nt("New Server Detected!", "Version: " .. game.PlaceVersion)
+    nt("New Server Detected!", "Version: " .. currentVersion)
     task.wait(0.5)
-    nt("Searching...", "Looking for a server with version ≤ 1279...")
+    nt("Searching...", "Looking for a server with version ≤ "..oldVersionMax.."...")
     local success = sh()
     if not success then
         task.wait(5)
