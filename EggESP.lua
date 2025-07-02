@@ -142,14 +142,16 @@ gui.ResetOnSpawn = false
 gui.Parent = localPlayer:WaitForChild("PlayerGui")
 
 local mainFrame = Instance.new("Frame")
-mainFrame.Size = UDim2.new(0, 340, 0, 160)
-mainFrame.Position = UDim2.new(0.5, -215, 0.5, -150)
+mainFrame.Size = UDim2.new(0, 260, 0, 120)
+mainFrame.Position = UDim2.new(0.5, -130, 0.5, -60)
 mainFrame.BackgroundColor3 = BROWN_BG
 mainFrame.Parent = gui
+mainFrame.Active = true
+mainFrame.Draggable = true
 local frameCorner = Instance.new("UICorner", mainFrame)
-frameCorner.CornerRadius = UDim.new(0, 13)
+frameCorner.CornerRadius = UDim.new(0, 10)
 local frameStroke = Instance.new("UIStroke", mainFrame)
-frameStroke.Thickness = 4
+frameStroke.Thickness = 2
 frameStroke.Color = BROWN_BORDER
 
 local brownTexture = Instance.new("ImageLabel")
@@ -165,12 +167,12 @@ brownTexture.ZIndex = 1
 brownTexture.Parent = mainFrame
 
 local topBar = Instance.new("Frame")
-topBar.Size = UDim2.new(1, 0, 0, 50)
+topBar.Size = UDim2.new(1, 0, 0, 26)
 topBar.BackgroundColor3 = ACCENT_GREEN
 topBar.BorderSizePixel = 0
 topBar.Parent = mainFrame
 local topBarCorner = Instance.new("UICorner", topBar)
-topBarCorner.CornerRadius = UDim.new(0, 13)
+topBarCorner.CornerRadius = UDim.new(0, 10)
 
 local greenTexture = Instance.new("ImageLabel")
 greenTexture.Name = "GreenTexture"
@@ -185,8 +187,8 @@ greenTexture.ZIndex = 1
 greenTexture.Parent = topBar
 
 local topLabel = Instance.new("TextLabel")
-topLabel.Size = UDim2.new(1, -130, 1, 0)
-topLabel.Position = UDim2.new(0, 18, 0, 0)
+topLabel.Size = UDim2.new(1, -62, 1, 0)
+topLabel.Position = UDim2.new(0, 8, 0, 0)
 topLabel.BackgroundTransparency = 1
 topLabel.Text = "🐣 Randomizer"
 topLabel.Font = FONT
@@ -199,8 +201,8 @@ topLabel.ZIndex = 1
 topLabel.Parent = topBar
 
 local infoBtn = Instance.new("TextButton")
-infoBtn.Size = UDim2.new(0, 38, 0, 38)
-infoBtn.Position = UDim2.new(1, -96, 0.5, -19)
+infoBtn.Size = UDim2.new(0, 18, 0, 18)
+infoBtn.Position = UDim2.new(1, -50, 0.5, -9)
 infoBtn.BackgroundColor3 = BUTTON_GRAY
 infoBtn.Text = "?"
 infoBtn.Font = FONT
@@ -211,7 +213,7 @@ infoBtn.Parent = topBar
 infoBtn.ZIndex = 2
 local infoStroke = Instance.new("UIStroke", infoBtn)
 infoStroke.Color = Color3.fromRGB(120,120,120)
-infoStroke.Thickness = 2
+infoStroke.Thickness = 1
 infoBtn.MouseEnter:Connect(function()
     infoBtn.BackgroundColor3 = Color3.fromRGB(220, 220, 220)
 end)
@@ -220,8 +222,8 @@ infoBtn.MouseLeave:Connect(function()
 end)
 
 local closeBtn = Instance.new("TextButton")
-closeBtn.Size = UDim2.new(0, 38, 0, 38)
-closeBtn.Position = UDim2.new(1, -48, 0.5, -19)
+closeBtn.Size = UDim2.new(0, 18, 0, 18)
+closeBtn.Position = UDim2.new(1, -25, 0.5, -9)
 closeBtn.BackgroundColor3 = BUTTON_RED
 closeBtn.Text = "X"
 closeBtn.Font = FONT
@@ -232,7 +234,7 @@ closeBtn.Parent = topBar
 closeBtn.ZIndex = 2
 local closeStroke = Instance.new("UIStroke", closeBtn)
 closeStroke.Color = Color3.fromRGB(107, 0, 0)
-closeStroke.Thickness = 2
+closeStroke.Thickness = 1
 closeBtn.MouseEnter:Connect(function()
     closeBtn.BackgroundColor3 = Color3.fromRGB(200, 62, 62)
 end)
@@ -245,8 +247,8 @@ end)
 
 local contentFrame = Instance.new("Frame")
 contentFrame.Name = "ContentFrame"
-contentFrame.Size = UDim2.new(1, -16, 1, -62)
-contentFrame.Position = UDim2.new(0, 8, 0, 54)
+contentFrame.Size = UDim2.new(1, -8, 1, -38)
+contentFrame.Position = UDim2.new(0, 4, 0, 32)
 contentFrame.BackgroundTransparency = 1
 contentFrame.ZIndex = 2
 contentFrame.Parent = mainFrame
@@ -265,7 +267,7 @@ end
 
 local function makeStyledButton(text, yPos, color, hover, onHover, onUnhover)
     local btn = Instance.new("TextButton")
-    btn.Size = UDim2.new(0.9, 0, 0, 40)
+    btn.Size = UDim2.new(0.9, 0, 0, 26)
     btn.Position = UDim2.new(0.05, 0, 0, yPos)
     btn.BackgroundColor3 = color
     btn.Text = text
@@ -276,10 +278,10 @@ local function makeStyledButton(text, yPos, color, hover, onHover, onUnhover)
     btn.ZIndex = 2
     btn.Parent = contentFrame
     local btnCorner = Instance.new("UICorner", btn)
-    btnCorner.CornerRadius = UDim.new(0, 10)
+    btnCorner.CornerRadius = UDim.new(0, 7)
     local btnStroke = Instance.new("UIStroke", btn)
     btnStroke.Color = BROWN_BORDER
-    btnStroke.Thickness = 2
+    btnStroke.Thickness = 1
     btn.MouseEnter:Connect(function()
         if onHover then onHover(btn) else btn.BackgroundColor3 = hover end
     end)
@@ -289,8 +291,7 @@ local function makeStyledButton(text, yPos, color, hover, onHover, onUnhover)
     return btn
 end
 
-local stopBtn
-stopBtn = makeStyledButton(
+local stopBtn = makeStyledButton(
     "[A] Auto Stop: ON",
     0,
     BUTTON_GREEN,
@@ -314,7 +315,7 @@ updateStopBtnColors(stopBtn)
 
 local rerollBtn = makeStyledButton(
     "[B] Reroll Pet Display",
-    52,
+    32,
     BUTTON_BLUE,
     BUTTON_BLUE_HOVER
 )
@@ -360,17 +361,17 @@ infoBtn.MouseButton1Click:Connect(function()
 
     local modal = Instance.new("Frame")
     modal.Name = "InfoModal"
-    modal.Size = UDim2.new(0, 360, 0, 180)
-    modal.Position = UDim2.new(0.5, -180, 0.5, -90)
+    modal.Size = UDim2.new(0, 180, 0, 70)
+    modal.Position = UDim2.new(0.5, -90, 0.5, -35)
     modal.BackgroundColor3 = BROWN_LIGHT
     modal.Active = true
     modal.ZIndex = 30
     modal.Parent = gui
     local modalCorner = Instance.new("UICorner", modal)
-    modalCorner.CornerRadius = UDim.new(0, 14)
+    modalCorner.CornerRadius = UDim.new(0, 8)
     local modalStroke = Instance.new("UIStroke", modal)
     modalStroke.Color = BROWN_BORDER
-    modalStroke.Thickness = 3
+    modalStroke.Thickness = 2
 
     local modalTexture = Instance.new("ImageLabel")
     modalTexture.Name = "ModalBrownTexture"
@@ -385,17 +386,17 @@ infoBtn.MouseButton1Click:Connect(function()
     modalTexture.Parent = modal
 
     local textTile = Instance.new("Frame")
-    textTile.Size = UDim2.new(1, 0, 0, 38)
+    textTile.Size = UDim2.new(1, 0, 0, 18)
     textTile.Position = UDim2.new(0, 0, 0, 0)
     textTile.BackgroundColor3 = ACCENT_GREEN
     textTile.ZIndex = 30
     textTile.Parent = modal
     local textTileCorner = Instance.new("UICorner", textTile)
-    textTileCorner.CornerRadius = UDim.new(0, 14)
+    textTileCorner.CornerRadius = UDim.new(0, 8)
 
     local textTileLabel = Instance.new("TextLabel")
-    textTileLabel.Size = UDim2.new(1, -40, 1, 0)
-    textTileLabel.Position = UDim2.new(0, 20, 0, 0)
+    textTileLabel.Size = UDim2.new(1, -20, 1, 0)
+    textTileLabel.Position = UDim2.new(0, 8, 0, 0)
     textTileLabel.BackgroundTransparency = 1
     textTileLabel.Text = "Info"
     textTileLabel.TextColor3 = Color3.fromRGB(255,255,255)
@@ -406,8 +407,8 @@ infoBtn.MouseButton1Click:Connect(function()
     textTileLabel.Parent = textTile
 
     local closeBtn2 = Instance.new("TextButton")
-    closeBtn2.Size = UDim2.new(0, 32, 0, 32)
-    closeBtn2.Position = UDim2.new(1, -40, 0, 3)
+    closeBtn2.Size = UDim2.new(0, 16, 0, 16)
+    closeBtn2.Position = UDim2.new(1, -18, 0, 1)
     closeBtn2.BackgroundColor3 = BUTTON_RED
     closeBtn2.TextColor3 = Color3.fromRGB(255, 255, 255)
     closeBtn2.Text = "✖"
@@ -424,17 +425,28 @@ infoBtn.MouseButton1Click:Connect(function()
     closeBtn2.MouseLeave:Connect(function()
         closeBtn2.BackgroundColor3 = BUTTON_RED
     end)
+    closeBtn2.MouseButton1Click:Connect(function()
+        if blur then blur:Destroy() end
+        if modal then modal:Destroy() end
+        if camera and originalFOV then
+            if currentTween then currentTween:Cancel() end
+            currentTween = TweenService:Create(camera, TweenInfo.new(tweenTime, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+                FieldOfView = originalFOV
+            })
+            currentTween:Play()
+        end
+    end)
 
     local infoBox = Instance.new("Frame")
-    infoBox.Size = UDim2.new(1, -40, 1, -60)
-    infoBox.Position = UDim2.new(0, 20, 0, 48)
+    infoBox.Size = UDim2.new(1, -10, 1, -21)
+    infoBox.Position = UDim2.new(0, 5, 0, 16)
     infoBox.BackgroundColor3 = Color3.fromRGB(196, 164, 132)
     infoBox.BackgroundTransparency = 0
     infoBox.ZIndex = 30
     infoBox.Parent = modal
 
     local infoBoxCorner = Instance.new("UICorner", infoBox)
-    infoBoxCorner.CornerRadius = UDim.new(0, 10)
+    infoBoxCorner.CornerRadius = UDim.new(0, 7)
 
     local infoBoxGradient = Instance.new("UIGradient", infoBox)
     infoBoxGradient.Color = ColorSequence.new{
@@ -454,19 +466,4 @@ infoBtn.MouseButton1Click:Connect(function()
     infoLabel.ZIndex = 31
     infoLabel.TextStrokeTransparency = 0.5
     infoLabel.Parent = infoBox
-
-    closeBtn2.MouseButton1Click:Connect(function()
-        if blur then blur:Destroy() end
-        if modal then modal:Destroy() end
-        if camera and originalFOV then
-            if currentTween then currentTween:Cancel() end
-            currentTween = TweenService:Create(camera, TweenInfo.new(tweenTime, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-                FieldOfView = originalFOV
-            })
-            currentTween:Play()
-        end
-    end)
 end)
-
-mainFrame.Active = true
-mainFrame.Draggable = true
