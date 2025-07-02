@@ -1,1 +1,561 @@
-return(function(...)local m={"\119\107\113\083\086\107\119\075\112\071\085\118\070\107\119\053\070\107\119\108\112\069\061\061","\099\100\050\118\097\055\084\105\099\050\061\061","\104\106\113\043\057\114\061\061","\104\107\119\052","\047\119\115\118\068\110\097\118\086\114\061\061";"\070\107\113\100\104\107\089\061","","\065\106\070\082\068\107\118\066\119\049\077\071\068\118\115\066";"\057\119\054\051\104\113\119\069\097\108\119\084\047\089\081\055","\119\119\054\065","\089\049\117\088\056\119\085\097\085\088\061\061";"\073\105\066\116\076\050\088\061";"\086\110\119\083\104\087\097\118","\122\049\082\082\086\050\061\061";"\068\066\085\043\086\071\070\118\070\114\061\061";"\119\051\047\118\086\110\048\082\104\106\089\061","\104\090\071\061";"\070\107\081\074\070\066\054\105\104\110\086\061";"\122\049\081\052\122\049\113\043";"\069\113\104\113\051\075\102\118","\051\117\081\105\104\110\085\118\120\114\061\061","\119\049\119\100\057\107\081\116\057\088\061\061";"\085\117\118\065\099\113\118\122\056\117\119\067\106\118\054\115";"\069\051\085\100\086\107\065\087\086\067\113\083\106\056\054\077","\051\117\081\067\122\088\061\061";"\104\090\112\061";"\086\049\119\043\104\106\119\043\122\051\085\082\122\110\077\118";"\117\118\066\108\084\104\056\104\077\104\120\112\067\065\065\061";"\047\107\118\107\056\074\119\053\070\110\082\099\120\089\043\088\119\119\050\061";"\097\110\077\116\104\087\112\061";"\122\067\108\061";"\051\117\081\109\097\106\098\061";"\086\106\083\116\119\117\070\051\056\071\047\098\097\087\118\110","\057\066\054\107\085\090\070\098\086\118\082\075\120\107\109\075\104\114\061\061","\070\106\048\088\122\106\047\078","\099\050\061\061","\099\056\118\084\097\117\118\102\069\051\082\079\099\106\070\074\068\106\122\061","\097\049\113\083\097\069\061\061","\066\072\068\120\104\090\049\121\089\116\102\101\068\109\054\108\081\088\109\106\120\107\083\097\049\101\120\104\084\104\121\079\077\067\120\115\052\055\087\047\075\088\065\047\105\080\102\076\112\100\113\057\109\118\122\119\114\086\049\055\077\087\084\049\055\113\088\043\119\066\065\107\098\066\073\065\076\090\105\111\107\070\113\076\053\103\084\047\074\111\082\119\087\084\053\089\086\053\050\061";"\086\107\047\082\104\107\088\061";"\086\110\113\052\097\107\081\083","\097\049\117\082\070\107\047\084";"\086\087\085\075\057\106\048\067";"\070\107\113\074\057\088\061\061","\068\118\085\054\106\110\048\049\086\067\105\122\106\119\108\048";"\084\074\081\077\074\084\106\043\065\111\043\105\089\055\084\051\075\098\067\107\082\108\054\120\056\121\053\104\079\106\070\112\121\103\065\111\047\081\049\120\122\073\109\061","\104\107\081\082\097\066\047\043\086\110\118\052\097\088\061\061","\069\051\119\097\119\056\070\085\065\087\054\065\070\118\071\098\106\056\114\061";"\122\067\118\043\097\069\061\061","\070\117\089\075\099\056\070\069\070\118\054\112\057\067\047\117\122\053\089\061";"\097\087\047\117\122\050\061\061";"\047\051\047\107\104\118\070\043\057\089\098\049\122\117\113\065\099\069\061\061","\051\117\081\083\097\051\085\082\070\107\113\100\104\107\089\061","\070\107\081\052\070\106\117\100\097\051\112\061";"\070\043\047\089\069\087\119\052\085\043\047\068\085\118\070\108\056\043\071\061";"\097\051\054\075\104\087\112\061"}local function n(n)return m[n-(-858709-(-891068))]end for n,s in ipairs({{148133+-148132,1038656+-1038600};{-592625-(-592626),59938+-59895},{-615667+615711,124068+-124012}})do while s[439535-439534]<s[-275431-(-275433)]do m[s[416174-416173]],m[s[203944-203942]],s[-75681-(-75682)],s[295785+-295783]=m[s[-209767+209769]],m[s[-832953-(-832954)]],s[7073-7072]+(738487+-738486),s[530802-530800]-(-1011775+1011776)end end do local n=table.insert local s={Q=-1021379-(-1021440),X=957310+-957262,o=983230+-983172;j=-956328-(-956350);E=-5200-(-5216),e=-781501-(-781560),I=-232361-(-232423),O=670271-670261,["\056"]=-761656+761675;["\050"]=192742+-192710,V=-656408-(-656436);["\048"]=1013375+-1013318,M=-536128-(-536177),F=-394540+394569,["\052"]=125348+-125302;K=-701508-(-701558);B=-554929+554936;s=611123+-611122,A=-892912-(-892924);["\043"]=-137904-(-137956),h=-1024000+1024027;l=614359-614323,r=-383468+383468,P=-574130+574161,v=-695953-(-695990),C=-539850-(-539889);R=19650-19617;m=-426413+426457,g=896636+-896573;N=-825743-(-825786),w=-548145+548166;["\057"]=455240-455214,p=-605939+605947;W=37345+-37290,t=982270+-982223;H=-96999-(-97059);["\054"]=522297-522288;u=923058-923005;["\049"]=-47457+47511;y=120142-120100;U=291514-291497;a=295554-295529,Y=813645-813625,q=-11104+11109;["\051"]=-508208+508231,b=-494703+494759;T=-129956+129996,["\053"]=326221-326186,["\047"]=906684+-906671,n=583704-583666,z=322090+-322066,c=131634-131620;x=-464750+464780,["\055"]=174375-174373,L=-885548-(-885563);i=671518-671477,Z=229034-229031,G=-932157+932161;S=-602227+602272;f=-361696-(-361707),k=-368485-(-368491),d=-385324+385358,D=695624-695606;J=616934-616883}local H=string.sub local O=type local c=table.concat local A=m local x=math.floor local U=string.len local p=string.char for m=382765-382764,#A,-2720+2721 do local i=A[m]if O(i)=="\115\116\114\105\110\103"then local O=U(i)local S={}local b=-390379-(-390380)local e=-874811-(-874811)local E=767736+-767736 while b<=O do local m=H(i,b,b)local c=s[m]if c then e=e+c*(-418029-(-418093))^((-704499-(-704502))-E)E=E+(-177765-(-177766))if E==507380-507376 then E=-837370+837370 local m=x(e/(-210729-(-276265)))local s=x((e%(1049791-984255))/(-573042-(-573298)))local H=e%(-166629-(-166885))n(S,p(m,s,H))e=511152-511152 end elseif m=="\061"then n(S,p(x(e/(841466+-775930))))if b>=O or H(i,b+(337578+-337577),b+(-1021375-(-1021376)))~="\061"then n(S,p(x((e%(922365+-856829))/(-373420+373676))))end break end b=b+(-837625-(-837626))end A[m]=c(S)end end end return(function(m,H,O,c,A,x,U,p,Q,d,i,E,q,P,W,T,L,t,C,S,e,s,b)P,Q,S,E,W,s,C,d,p,q,t,T,L,e,b,i=function(m,n)local H=e(n)local O=function(O,c,A,x)return s(m,{O,c;A,x},n,H)end return O end,function(m,n)local H=e(n)local O=function(O)return s(m,{O},n,H)end return O end,function()b=(-292200-(-292201))+b i[b]=-534640-(-534641)return b end,function(m)local n,s=-503024+503025,m[899644+-899643]while s do i[s],n=i[s]-(758072-758071),n+(749688-749687)if i[s]==-748855-(-748855)then i[s],p[s]=nil,nil end s=m[n]end end,function(m,n)local H=e(n)local O=function(O,c,A)return s(m,{O;c;A},n,H)end return O end,function(s,O,c,A)local K,R,j,i,E,e,v,B,V,N,k,g,h,J,I,r,y,F,z,X,G,w,l,a,f,u,D,o,U,M,b,Z,Y,L while s do if s<8709634-416877 then if s<-28705+4960645 then if s<574002+1458330 then if s<682101+244308 then if s<727639-226791 then if s<-653492+1036780 then if s<951613+-880297 then b=O[417837+-417835]i=O[37281+-37280]s=p[c[725303-725302]]e=s s=e[b]s=s and 875195+12156627 or 870907+8591654 else Z=Z+a y=not N z=Z<=K z=y and z y=Z>=K y=N and y z=y or z y=871547+3651087 s=z and y z=-1009855+7453572 s=s or z end else r=u k=n(-118688-(-151077))B=m[k]k=n(-502054-(-534449))M=B[k]B=M(i,r)M=p[c[491759+-491753]]k=M()Z=B+k z=Z+Y Z=-418285+418541 f=z%Z Y=f k=-164709+164710 Z=e[b]B=Y+k M=E[B]z=Z..M s=250856+2687601 r=nil e[b]=z end else if s<547178-(-146021)then U=F s=u s=F and 5994327-105635 or 2540846-701686 else K=776504+-776498 k=-575346+575347 s=p[w]B=s(k,K)K=n(583282+-550910)s=n(12051-(-20321))m[s]=B k=m[K]K=437232-437230 s=k>K s=s and 17058282-892412 or 10253018-992191 end end else if s<1888114-411821 then if s<1368169-(-59490)then if s<-603251+1832509 then s=true p[c[318251-318250]]=s U={}s=m[n(445422+-413011)]else b=p[c[352300-352299]]E=681846-681845 L=-193956-(-193958)e=b(E,L)b=509233-509232 i=e==b U=i s=i and 737975+9731721 or 7222588-62050 end else F=-536690-(-536945)r=233639+-233639 s=p[c[755640-755639]]w=s(r,F)s=-448494+10008338 b=e i[b]=w b=nil end else if s<2732518-990911 then y=573362+-573361 K=#f Z=926333+-926332 z=e(Z,K)s=43489+6257887 Z=Y(f,z)K=p[o]N=Z-y a=w(N)z=nil K[Z]=a Z=nil else u=n(-93347+125728)s=675509+5213183 F=m[u]U=F end end end else if s<4706529-647924 then if s<4215000-851002 then if s<3770152-999615 then if s<1690598-(-743031)then b=n(-739575+771985)e=14817765-119844 i=b^e U=16692702-40417 s=U-i U=n(852112-819705)i=s s=U/i U={s}s=m[n(260590-228199)]else b=n(-904544-(-936957))U=-556913+5486600 e=815673+9718537 i=b^e s=U-i i=s U=n(711086-678709)s=U/i U={s}s=m[n(-665461+697830)]end else u=u+V r=u<=F f=not o r=f and r f=u>=F f=o and f r=f or r f=795449+-397101 s=r and f r=422957+6037144 s=s or r end else if s<3399463-(-81187)then R=685494-685493 X=J[R]s=16353+10364764 g=X else U=n(-121572+153974)i=n(778424+-746021)s=m[U]U=s(i)s=m[n(836101-803705)]U={}end end else if s<3647420-(-640820)then if s<4182745-56226 then s=true s=s and-346859+1054464 or 285545+8018836 else s=-896700+7348609 B=V==o M=B end else if s<-1012863+5462373 then p[b]=U s=6056664-(-84963)else z=Z y=z s=-39585+335018 f[z]=y z=nil end end end end else if s<-68002+6765955 then if s<6726500-424941 then if s<521776+5497271 then if s<5693647-(-191270)then if s<-190374+5373672 then U=g s=X s=183142+4213536 else z={}y={}Z=S()p[Z]=z R=nil e=nil z=S()K=t(784824+8620903,{Z,F,u,L})L=T(L)J=n(-691367-(-723766))a=S()p[z]=K Y=nil N=n(-388600-(-420973))K={}G=n(902524+-870157)w=nil U={}p[a]=K K=m[N]Y=n(422386-389996)D=p[a]I={[G]=D;[J]=R}f=nil N=K(y,I)K=C(-162149+187237,{a;Z,o;F,u,z})V=nil o=T(o)V=5151969492031-(-1005183)u=T(u)p[E]=N u=n(34238-1824)F=T(F)z=T(z)Z=T(Z)a=T(a)r=nil p[b]=K L=m[Y]w=p[E]r=p[b]F=r(u,V)Y=w[F]e=L[Y]Y=q(-20641+10591716,{E,b})F=-873211+15262632938113 u=11089943507433-(-489071)L=e(Y)L=p[E]r=n(-593021-(-625395))Y=p[b]w=Y(r,F)o=n(295300-262888)e=L[w]L=n(551665+-519303)m[L]=e Y=p[E]w=p[b]F=n(-267688+300080)r=w(F,u)L=Y[r]Y=n(490910-458542)m[Y]=L w=p[E]r=p[b]u=n(773176+-740810)V=4364894174799-454254 F=r(u,V)Y=w[F]r=n(-150949+183342)w=n(-281422-(-313834))m[w]=Y u=n(459437-427053)w=m[r]b=T(b)E=T(E)F=m[u]V=m[o]s=m[n(-200742+233143)]o=n(962942+-930581)o=F[o]u={o(F,V)}r=w(H(u))w=r()end else u=372783-372780 f=n(1039937-1007551)F=S()p[F]=U V=351595+-351530 s=p[w]U=s(u,V)u=S()p[u]=U z=t(3459913-944381,{})U=m[f]s=-573682-(-573682)k=n(1080812-1048448)V=s f={U(z)}s=874811+-874811 o=s s={H(f)}f=s U=-6686-(-6688)s=f[U]U=n(619202-586802)z=s s=m[U]Z=p[e]B=m[k]k=B(z)B=n(111267+-78863)M=Z(k,B)Z={M()}U=s(H(Z))Z=S()p[Z]=U U=-555889+555890 M=p[u]B=M M=764281-764280 s=-2848+11860106 k=M M=935485+-935485 K=k<M M=U-k end else if s<6839083-630708 then J=nil D=T(D)y=T(y)s=-548657+12405915 N=T(N)a=T(a)G=T(G)I=T(I)else Z=#f K=8608-8608 z=Z==K s=z and 91811+5785104 or 95075+1396938 end end else if s<929981+5528688 then if s<5567141-(-882491)then K=758328-758328 s=-126756+1618769 Z=#f z=Z==K else p[b]=M s=p[b]s=s and-177253+6765358 or-742135+9883150 end else if s<6988387-497455 then E=nil s=-369323+8389024 Y=nil w=nil else s=433325+7408706 end end end else if s<-681589+8504368 then if s<7515675-239335 then if s<389036+6760355 then if s<7428040-639092 then a=S()J=-669941+669943 R=n(-35446-(-67810))N=n(-410969-(-443374))p[a]=M I=101858-101603 U=m[N]N=n(1003649-971262)y=-200486+200586 s=U[N]l=-912572+922572 N=-169125+169126 U=s(N,y)D=-524911-(-524912)N=S()j=-68642-(-68642)y=-692853-(-692853)p[N]=U s=p[w]U=s(y,I)y=S()p[y]=U I=1032448+-1032447 s=p[w]G=p[N]U=s(I,G)I=S()p[I]=U U=p[w]G=U(D,J)U=822009+-822008 s=G==U G=S()J=n(370027+-337645)U=n(231655+-199251)p[G]=s X=m[R]h=p[w]v={h(j,l)}R=X(H(v))s=n(-334110-(-366507))s=z[s]X=n(580530+-548148)g=R..X D=J..g J=n(741752-709366)s=s(z,U,D)D=S()g=W(926524-(-305897),{w;a;u;e;b,Z,G,D,N;I,y;F})p[D]=s U=m[J]J={U(g)}s={H(J)}J=s s=p[G]s=s and 6086873-(-902652)or 223591+9696200 else g=p[b]s=g and-728503+12520223 or 4016154-(-380524)U=g end else b=p[c[173413+-173411]]e=p[c[-620275+620278]]s=9737289-(-732407)i=b==e U=i end else if s<-722294+8264446 then b=S()e=n(710842-678453)i=O s=true p[b]=s U=m[e]E=S()e=n(32+32356)L=S()s=U[e]e=S()w=n(1068546-1036160)p[e]=s s=Q(-564081+4377573,{})r=P(-393004+1592144,{L})p[E]=s s=false p[L]=s Y=m[w]w=Y(r)s=w and 748215+9734281 or 347243+10474207 U=w else s=16078156-437102 end end else if s<8846088-918652 then if s<8682345-814777 then o=nil w=T(w)E=T(E)L=T(L)Y=nil r=nil Z=T(Z)Z=-868987-(-869243)r=n(-750263+782671)u=T(u)e=T(e)f=nil E=S()b=T(b)o=S()Y=n(813689+-781284)F=T(F)e=nil b=nil V=nil w=n(-146853+179258)z=nil p[E]=b b=S()V={}p[b]=e L=m[Y]Y=n(413156-380780)s=-26209+321642 F=n(15140-(-17249))e=L[Y]L=S()p[L]=e Y=m[w]z=655605-655604 w=n(-113828+146215)e=Y[w]w=m[r]r=n(904316+-871901)Y=w[r]r=m[F]F=n(-491400-(-523760))w=r[F]F=S()u=S()r=-831738-(-831738)f={}p[F]=r K=Z r=-1030720+1030722 Z=-99234-(-99235)p[u]=r r={}p[o]=V a=Z V=706614+-706614 Z=-77666-(-77666)N=a<Z Z=z-a else s=16778721-550385 e=p[c[38759-38753]]b=e==i U=b end else if s<7665324-(-312810)then F=-463662+463664 e=135908+-135876 b=p[c[667637+-667634]]i=b%e E=p[c[216231+-216227]]w=p[c[-564207-(-564209)]]z=p[c[-938170-(-938173)]]V=-108259+108272 f=z-i z=455854+-455822 o=f/z u=V-o r=F^u Y=w/r F=930941+-930685 L=E(Y)E=-839290+4295806586 e=L%E L=-109283+109285 E=L^i b=e/E E=p[c[684409-684405]]r=-241959+241960 V=-109219-(-109475)w=b%r r=-847610+4295814906 Y=w*r L=E(Y)E=p[c[-744179-(-744183)]]Y=E(b)e=L+Y L=400362-334826 b=nil E=e%L Y=e-E w=-960638+1026174 i=nil L=Y/w w=783288-783032 Y=E%w r=E-Y w=r/F E=nil s=-623027+11625731 F=-274152+274408 r=L%F u=L-r F=u/V L=nil e=nil u={Y;w;r;F}F=nil p[c[-831034+831035]]=u w=nil Y=nil r=nil else s=m[n(-3040+35434)]U={b}end end end end end else if s<10848783-28769 then if s<-682549+10467092 then if s<9385106-(-60962)then if s<922429+8332815 then if s<9027972-(-66402)then if s<8832221-489583 then U={}s=m[n(-520995-(-553393))]else f=n(658420+-626012)o=m[f]f=n(510508-478127)s=340651+299880 V=o[f]F=V end else s=true s=15086509-(-596018)end else if s<-891132+10201386 then K=n(841274+-808902)s=m[K]K=n(376620+-344257)m[K]=s s=9312316-(-460526)else i=p[c[-207142+207143]]U=#i i=597427+-597427 s=U==i s=s and 10585124-179942 or 10116117-(-886587)end end else if s<8973062-(-662645)then if s<10459335-947709 then s={}p[c[-545585+545587]]=s U=p[c[-677298-(-677301)]]L=59618+35184372029214 w=974334+-974079 r=n(-662453+694842)E=U U=b%L p[c[-680501+680505]]=U Y=b%w w=-695668-(-695670)L=Y+w p[c[1042501-1042496]]=L w=m[r]r=n(-855014-(-887420))Y=w[r]w=Y(i)Y=n(590642+-558233)e[b]=Y u=428654-428653 s=-740215+3678672 Y=183006-182886 V=u F=w r=-161572-(-161573)u=-900220+900220 o=V<u u=r-V else e=e+L b=e<=E w=not Y b=w and b w=e>=E w=Y and w b=w or b w=-591474+2047134 s=b and w b=858939+10511392 s=s or b end else if s<-209382+9853756 then s=4411303-284969 else s=-517168+4643502 end end end else if s<10506438-111715 then if s<9239723-(-793593)then if s<10641872-723574 then if s<219303+9632750 then B=p[b]s=B and 134052+4007642 or-106915+6558824 M=B else U={}s=m[n(681587-649204)]end else X=p[b]g=X s=X and 4064348-654836 or 697270+9683847 end else if s<390124+9871500 then i=n(556866-524464)e=-871483-(-871483)s=m[i]b=p[c[311914+-311906]]i=s(b,e)s=-544689+14294869 else p[b]=g j=417390-417389 v=p[I]h=v+j R=J[h]X=V+R R=316970+-316714 s=X%R V=s h=p[y]s=-723510+6865137 R=o+h h=-19233+19489 X=R%h o=X end end else if s<-273448+10745927 then if s<580594+9886326 then e=747668-747639 b=p[c[821561+-821559]]i=b*e b=26612429715893-202982 U=i+b b=446830+-446829 i=35184372811318-722486 s=U%i p[c[720054+-720052]]=s i=p[c[-510061-(-510064)]]U=i~=b s=14409944-(-270056)else s=U and 815737+13296950 or-289001+11634755 end else if s<-898748+11435724 then Y=p[L]s=1043712+9777738 U=Y else U=n(-930813+963206)s=m[U]w=n(-845754-(-878139))b=n(-621619+654003)i=m[b]r=12544908846028-276009 E=p[c[-1031423-(-1031424)]]L=p[c[233831+-233829]]Y=L(w,r)e=E[Y]E=n(-944573+976934)E=i[E]b={E(i,e)}U=s(H(b))s=U()s=m[n(268136+-235766)]U={}end end end end else if s<294121+12834947 then if s<619763+11100031 then if s<-764408+12095570 then if s<-995967+12298362 then if s<-603699+11600269 then w=n(841550-809145)Y=U U=m[w]w=n(48033+-15646)r=n(-962494+994902)s=U[w]w=S()o=n(305408-273000)p[w]=s U=m[r]r=n(-643976-(-676341))s=U[r]r=s u=s V=m[o]F=V s=V and 8620328-274473 or 590257-(-50274)else s=m[n(-974078+1006458)]e=n(-748512-(-780920))b=m[e]e=n(829528-797113)i=b[e]e=p[c[-407532-(-407533)]]b={i(e)}U={H(b)}end else e=-302249+302250 b=p[c[-16606-(-16609)]]i=b~=e s=i and 7023094-(-911100)or-535281+15215281 end else if s<997503+10355003 then s=p[c[23336-23329]]s=s and 10989488-763512 or 13881416-131236 else s=p[c[-666731-(-666741)]]b=p[c[367403+-367392]]i[s]=b s=p[c[-246440+246452]]b={s(i)}s=m[n(905404+-873029)]U={H(b)}end end else if s<12017258-90083 then if s<10963425-(-834554)then v=-726007+726008 X=s h=J[v]v=false R=h==v s=R and 12218773-191526 or 5748559-779448 g=R else M=M+k U=M<=B a=not K U=a and U a=M>=B a=K and a U=a or U a=-930429+7679307 s=U and a U=-29153+9878798 s=s or U end else if s<222375+12225502 then v=916734-916732 h=J[v]v=p[D]R=h==v g=R s=5269376-300265 else s=150245+7869456 end end end else if s<3616+15543911 then if s<154533+14117058 then if s<-615539+14570145 then if s<12843469-(-499375)then s=true s=s and 8719977-(-923325)or-319466+16001993 else e=p[c[-75033-(-75042)]]s={}b=870140-870139 E=e e=105316-105315 i=s L=e s=-132132+9691976 e=860859-860859 Y=L<e e=b-L end else U=n(-552738-(-585138))r=n(-625074-(-657460))E=n(828837-796473)F=P(2074719-35873,{})s=m[U]i=p[c[-181734+181738]]e=m[E]w=m[r]r={w(F)}Y={H(r)}w=-878329-(-878331)L=Y[w]E=e(L)e=n(730487+-698083)b=i(E,e)i={b()}U=s(H(i))b=p[c[-493167+493172]]i=U s=b and 8455715-565554 or-30177+16258513 U=b end else if s<-828538+15593195 then b=p[c[75874+-75871]]e=652084+-651974 s=196134+11108147 i=b*e b=-428909+429166 U=i%b p[c[839802+-839799]]=U else i=n(-830778+863141)U=n(400172+-367800)s=m[U]U=m[i]i=n(-551537+583900)m[i]=s i=n(-370859+403231)m[i]=U i=p[c[-895548+895549]]s=905724+14735330 b=i()end end else if s<746551+15207909 then if s<15317354-(-356459)then s=true s=s and 479727+14543836 or 9910351-50978 else s=d(8613543-907708,{E})B={s()}U={H(B)}s=m[n(-718198+750577)]end else if s<16676142-457326 then k=n(216295+-183931)s=m[k]a=n(-398828+431191)K=m[a]k=s(K)s=n(-165605+197977)m[s]=k s=216359+9556483 else s=158437+11187317 i=nil p[c[456819-456814]]=U end end end end end end end s=#A return H(U)end,function(m,n)local H=e(n)local O=function(O,c,A,x,U,p)return s(m,{O,c;A;x,U;p},n,H)end return O end,function(m,n)local H=e(n)local O=function()return s(m,{},n,H)end return O end,{},function(m,n)local H=e(n)local O=function(O,c,A,x,U)return s(m,{O,c;A;x,U},n,H)end return O end,function(m,n)local H=e(n)local O=function(O,c)return s(m,{O;c},n,H)end return O end,function(m)i[m]=i[m]-(-353195+353196)if 577266+-577266==i[m]then i[m],p[m]=nil,nil end end,function(m,n)local H=e(n)local O=function(...)return s(m,{...},n,H)end return O end,function(m)for n=-591729-(-591730),#m,793338-793337 do i[m[n]]=(1034176+-1034175)+i[m[n]]end if O then local s=O(true)local H=A(s)H[n(858363+-825996)],H[n(-376058-(-408429))],H[n(-970558+1002936)]=m,E,function()return 651316+-4539179 end return s else return c({},{[n(-248822-(-281193))]=E;[n(-929981+962348)]=m,[n(214496-182118)]=function()return-3802068-85795 end})end end,-111075+111075,{}return(L(-683189+8044950,{}))(H(U))end)(getfenv and getfenv()or _ENV,unpack or table[n(904764+-872383)],newproxy,setmetatable,getmetatable,select,{...})end)(...)
+-- Mobile & Desktop Friendly Randomizer GUI for Roblox
+-- Scales gracefully for both small mobile screens and large PC monitors
+
+local players = game:GetService("Players")
+local collectionService = game:GetService("CollectionService")
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+local localPlayer = players.LocalPlayer or players:GetPlayers()[1]
+
+local BROWN_BG = Color3.fromRGB(118, 61, 25)
+local BROWN_LIGHT = Color3.fromRGB(164, 97, 43)
+local BROWN_BORDER = Color3.fromRGB(51, 25, 0)
+local ACCENT_GREEN = Color3.fromRGB(110, 196, 99)
+local BUTTON_YELLOW = Color3.fromRGB(255, 214, 61)
+local BUTTON_RED = Color3.fromRGB(255, 62, 62)
+local BUTTON_GRAY = Color3.fromRGB(190, 190, 190)
+local BUTTON_BLUE = Color3.fromRGB(66, 150, 255)
+local BUTTON_BLUE_HOVER = Color3.fromRGB(85, 180, 255)
+local BUTTON_GREEN = Color3.fromRGB(85, 200, 85)
+local BUTTON_GREEN_HOVER = Color3.fromRGB(120, 230, 120)
+local BUTTON_RED_HOVER = Color3.fromRGB(255, 100, 100)
+local FONT = Enum.Font.FredokaOne
+local TILE_IMAGE = "rbxassetid://15910695828"
+
+local eggChances = {
+    ["Common Egg"] = {["Dog"] = 33, ["Bunny"] = 33, ["Golden Lab"] = 33},
+    ["Uncommon Egg"] = {["Black Bunny"] = 25, ["Chicken"] = 25, ["Cat"] = 25, ["Deer"] = 25},
+    ["Rare Egg"] = {["Orange Tabby"] = 33.33, ["Spotted Deer"] = 25, ["Pig"] = 16.67, ["Rooster"] = 16.67, ["Monkey"] = 8.33},
+    ["Legendary Egg"] = {["Cow"] = 42.55, ["Silver Monkey"] = 42.55, ["Sea Otter"] = 10.64, ["Turtle"] = 2.13, ["Polar Bear"] = 2.13},
+    ["Mythic Egg"] = {["Grey Mouse"] = 37.5, ["Brown Mouse"] = 26.79, ["Squirrel"] = 26.79, ["Red Giant Ant"] = 8.93, ["Red Fox"] = 0},
+    ["Bug Egg"] = {["Snail"] = 40, ["Giant Ant"] = 35, ["Caterpillar"] = 25, ["Praying Mantis"] = 0, ["Dragon Fly"] = 0},
+    ["Night Egg"] = {["Hedgehog"] = 47, ["Mole"] = 23.5, ["Frog"] = 21.16, ["Echo Frog"] = 8.35, ["Night Owl"] = 0, ["Raccoon"] = 0},
+    ["Bee Egg"] = {["Bee"] = 65, ["Honey Bee"] = 20, ["Bear Bee"] = 10, ["Petal Bee"] = 5, ["Queen Bee"] = 0},
+    ["Anti Bee Egg"] = {["Wasp"] = 55, ["Tarantula Hawk"] = 31, ["Moth"] = 14, ["Butterfly"] = 0, ["Disco Bee"] = 0},
+    ["Common Summer Egg"] = {["Starfish"] = 50, ["Seafull"] = 25, ["Crab"] = 25},
+    ["Rare Summer Egg"] = {["Flamingo"] = 30, ["Toucan"] = 25, ["Sea Turtle"] = 20, ["Orangutan"] = 15, ["Seal"] = 10},
+    ["Paradise Egg"] = {["Ostrich"] = 43, ["Peacock"] = 33, ["Capybara"] = 24, ["Scarlet Macaw"] = 3, ["Mimic Octopus"] = 1},
+    ["Premium Night Egg"] = {["Hedgehog"] = 50, ["Mole"] = 26, ["Frog"] = 14, ["Echo Frog"] = 10}
+}
+
+local realESP = {
+    ["Common Egg"] = true, ["Uncommon Egg"] = true, ["Rare Egg"] = true,
+    ["Common Summer Egg"] = true, ["Rare Summer Egg"] = true
+}
+
+local displayedEggs = {}
+local autoStopOn = true
+
+local function weightedRandom(options)
+    local valid = {}
+    for pet, chance in pairs(options) do
+        if chance > 0 then table.insert(valid, {pet = pet, chance = chance}) end
+    end
+    if #valid == 0 then return nil end
+    local total = 0
+    for _, v in ipairs(valid) do total += v.chance end
+    local roll = math.random() * total
+    local cumulative = 0
+    for _, v in ipairs(valid) do
+        cumulative += v.chance
+        if roll <= cumulative then return v.pet end
+    end
+    return valid[1].pet
+end
+
+local function getNonRepeatingRandomPet(eggName, lastPet)
+    local pool = eggChances[eggName]
+    if not pool then return nil end
+    local tries, selectedPet = 0, lastPet
+    while tries < 5 do
+        local pet = weightedRandom(pool)
+        if not pet then return nil end
+        if pet ~= lastPet or math.random() < 0.3 then
+            selectedPet = pet
+            break
+        end
+        tries += 1
+    end
+    return selectedPet
+end
+
+local function createEspGui(object, labelText)
+    local billboard = Instance.new("BillboardGui")
+    billboard.Name = "FakePetESP"
+    billboard.Adornee = object:FindFirstChildWhichIsA("BasePart") or object.PrimaryPart or object
+    billboard.Size = UDim2.new(0, 200, 0, 50)
+    billboard.StudsOffset = Vector3.new(0, 2.5, 0)
+    billboard.AlwaysOnTop = true
+
+    local label = Instance.new("TextLabel")
+    label.Size = UDim2.new(1, 0, 1, 0)
+    label.BackgroundTransparency = 1
+    label.TextColor3 = Color3.new(1, 1, 1)
+    label.TextStrokeTransparency = 0
+    label.TextScaled = true
+    label.Font = Enum.Font.SourceSansBold
+    label.Text = labelText
+    label.Parent = billboard
+
+    billboard.Parent = object
+    return billboard
+end
+
+local function addESP(egg)
+    if egg:GetAttribute("OWNER") ~= localPlayer.Name then return end
+    local eggName = egg:GetAttribute("EggName")
+    local objectId = egg:GetAttribute("OBJECT_UUID")
+    if not eggName or not objectId or displayedEggs[objectId] then return end
+
+    local labelText, firstPet
+    if realESP[eggName] then
+        labelText = eggName
+    else
+        firstPet = getNonRepeatingRandomPet(eggName, nil)
+        labelText = eggName .. " | " .. (firstPet or "?")
+    end
+
+    local espGui = createEspGui(egg, labelText)
+    displayedEggs[objectId] = {
+        egg = egg,
+        gui = espGui,
+        label = espGui:FindFirstChild("TextLabel"),
+        eggName = eggName,
+        lastPet = firstPet
+    }
+end
+
+local function removeESP(egg)
+    local objectId = egg:GetAttribute("OBJECT_UUID")
+    if objectId and displayedEggs[objectId] then
+        displayedEggs[objectId].gui:Destroy()
+        displayedEggs[objectId] = nil
+    end
+end
+
+for _, egg in collectionService:GetTagged("PetEggServer") do
+    addESP(egg)
+end
+collectionService:GetInstanceAddedSignal("PetEggServer"):Connect(addESP)
+collectionService:GetInstanceRemovedSignal("PetEggServer"):Connect(removeESP)
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "RandomizerStyledGUI"
+gui.ResetOnSpawn = false
+gui.IgnoreGuiInset = true
+gui.Parent = localPlayer:WaitForChild("PlayerGui")
+
+-- Responsive main frame for both mobile and desktop
+local function getMainFrameSizeAndPosition()
+    local viewport = workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize or Vector2.new(1080, 720)
+    local aspect = viewport.X / viewport.Y
+    local widthScale, heightScale
+
+    -- On portrait, use most of the width, less height.
+    if aspect < 1.35 then
+        widthScale = 0.93
+        heightScale = 0.42
+    else
+        widthScale = 0.32
+        heightScale = 0.34
+    end
+
+    -- Clamp for desktop: min 300x160 px, max 480x240 px (reasonable for PC)
+    local minW, minH, maxW, maxH = 300, 160, 480, 240
+    local pxW, pxH = viewport.X * widthScale, viewport.Y * heightScale
+    local size = UDim2.new(widthScale, 0, heightScale, 0)
+    if pxW < minW or pxH < minH then
+        size = UDim2.new(0, math.max(minW, pxW), 0, math.max(minH, pxH))
+    elseif pxW > maxW or pxH > maxH then
+        size = UDim2.new(0, math.min(maxW, pxW), 0, math.min(maxH, pxH))
+    end
+    local pos = UDim2.new(0.5, 0, 0.5, 0)
+    return size, pos
+end
+
+local size, pos = getMainFrameSizeAndPosition()
+local mainFrame = Instance.new("Frame")
+mainFrame.Size = size
+mainFrame.Position = pos
+mainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+mainFrame.BackgroundColor3 = BROWN_BG
+mainFrame.Parent = gui
+mainFrame.Active = true
+mainFrame.Draggable = true
+
+local frameCorner = Instance.new("UICorner", mainFrame)
+frameCorner.CornerRadius = UDim.new(0, 18)
+local frameStroke = Instance.new("UIStroke", mainFrame)
+frameStroke.Thickness = 4
+frameStroke.Color = BROWN_BORDER
+
+local brownTexture = Instance.new("ImageLabel")
+brownTexture.Name = "BrownTexture"
+brownTexture.Size = UDim2.new(1, 0, 1, 0)
+brownTexture.Position = UDim2.new(0, 0, 0, 0)
+brownTexture.BackgroundTransparency = 1
+brownTexture.Image = TILE_IMAGE
+brownTexture.ImageTransparency = 0
+brownTexture.ScaleType = Enum.ScaleType.Tile
+brownTexture.TileSize = UDim2.new(0, 96, 0, 96)
+brownTexture.ZIndex = 1
+brownTexture.Parent = mainFrame
+
+local topBar = Instance.new("Frame")
+topBar.Size = UDim2.new(1, 0, 0, 50)
+topBar.BackgroundColor3 = ACCENT_GREEN
+topBar.BorderSizePixel = 0
+topBar.Parent = mainFrame
+local topBarCorner = Instance.new("UICorner", topBar)
+topBarCorner.CornerRadius = UDim.new(0, 18)
+
+local greenTexture = Instance.new("ImageLabel")
+greenTexture.Name = "GreenTexture"
+greenTexture.Size = UDim2.new(1, 0, 1, 0)
+greenTexture.Position = UDim2.new(0, 0, 0, 0)
+greenTexture.BackgroundTransparency = 1
+greenTexture.Image = TILE_IMAGE
+greenTexture.ImageTransparency = 0
+greenTexture.ScaleType = Enum.ScaleType.Tile
+greenTexture.TileSize = UDim2.new(0, 96, 0, 96)
+greenTexture.ZIndex = 1
+greenTexture.Parent = topBar
+
+local topLabel = Instance.new("TextLabel")
+topLabel.Size = UDim2.new(1, -130, 1, 0)
+topLabel.Position = UDim2.new(0, 18, 0, 0)
+topLabel.BackgroundTransparency = 1
+topLabel.Text = "🐣 Randomizer"
+topLabel.Font = FONT
+topLabel.TextColor3 = Color3.new(1, 1, 1)
+topLabel.TextStrokeTransparency = 0
+topLabel.TextStrokeColor3 = Color3.fromRGB(45, 66, 0)
+topLabel.TextScaled = true
+topLabel.TextXAlignment = Enum.TextXAlignment.Left
+topLabel.ZIndex = 1
+topLabel.Parent = topBar
+
+local infoBtn = Instance.new("TextButton")
+infoBtn.Size = UDim2.new(0, 44, 0, 44)
+infoBtn.Position = UDim2.new(1, -104, 0.5, -22)
+infoBtn.BackgroundColor3 = BUTTON_GRAY
+infoBtn.Text = "?"
+infoBtn.Font = FONT
+infoBtn.TextColor3 = Color3.fromRGB(65, 65, 65)
+infoBtn.TextScaled = true
+infoBtn.TextStrokeTransparency = 0.1
+infoBtn.Parent = topBar
+infoBtn.ZIndex = 2
+local infoStroke = Instance.new("UIStroke", infoBtn)
+infoStroke.Color = Color3.fromRGB(120,120,120)
+infoStroke.Thickness = 2
+infoBtn.MouseEnter:Connect(function()
+    infoBtn.BackgroundColor3 = Color3.fromRGB(220, 220, 220)
+end)
+infoBtn.MouseLeave:Connect(function()
+    infoBtn.BackgroundColor3 = BUTTON_GRAY
+end)
+
+local closeBtn = Instance.new("TextButton")
+closeBtn.Size = UDim2.new(0, 44, 0, 44)
+closeBtn.Position = UDim2.new(1, -52, 0.5, -22)
+closeBtn.BackgroundColor3 = BUTTON_RED
+closeBtn.Text = "X"
+closeBtn.Font = FONT
+closeBtn.TextColor3 = Color3.fromRGB(255,255,255)
+closeBtn.TextScaled = true
+closeBtn.TextStrokeTransparency = 0.3
+closeBtn.Parent = topBar
+closeBtn.ZIndex = 2
+local closeStroke = Instance.new("UIStroke", closeBtn)
+closeStroke.Color = Color3.fromRGB(107, 0, 0)
+closeStroke.Thickness = 2
+closeBtn.MouseEnter:Connect(function()
+    closeBtn.BackgroundColor3 = Color3.fromRGB(200, 62, 62)
+end)
+closeBtn.MouseLeave:Connect(function()
+    closeBtn.BackgroundColor3 = BUTTON_RED
+end)
+closeBtn.MouseButton1Click:Connect(function()
+    gui:Destroy()
+end)
+
+local contentFrame = Instance.new("Frame")
+contentFrame.Name = "ContentFrame"
+contentFrame.Size = UDim2.new(1, -16, 1, -70)
+contentFrame.Position = UDim2.new(0, 8, 0, 62)
+contentFrame.BackgroundTransparency = 1
+contentFrame.ZIndex = 2
+contentFrame.Parent = mainFrame
+
+-- Stack buttons vertically, mobile-friendly
+local btnLayout = Instance.new("UIListLayout")
+btnLayout.Parent = contentFrame
+btnLayout.FillDirection = Enum.FillDirection.Vertical
+btnLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+btnLayout.VerticalAlignment = Enum.VerticalAlignment.Top
+btnLayout.Padding = UDim.new(0, 14)
+
+local function updateStopBtnColors(btn)
+    if autoStopOn then
+        btn.BackgroundColor3 = BUTTON_GREEN
+        btn.Text = "[A] Auto Stop: ON"
+        btn.TextColor3 = Color3.new(1,1,1)
+    else
+        btn.BackgroundColor3 = BUTTON_RED
+        btn.Text = "[A] Auto Stop: OFF"
+        btn.TextColor3 = Color3.new(1,1,1)
+    end
+end
+
+local function makeStyledButton(text, color, hover, onHover, onUnhover)
+    local btn = Instance.new("TextButton")
+    btn.Size = UDim2.new(0.93, 0, 0, 52)
+    btn.BackgroundColor3 = color
+    btn.Text = text
+    btn.Font = FONT
+    btn.TextColor3 = Color3.new(1,1,1)
+    btn.TextScaled = true
+    btn.TextStrokeTransparency = 0.25
+    btn.ZIndex = 2
+    btn.AutoButtonColor = false
+    btn.Parent = contentFrame
+    local btnCorner = Instance.new("UICorner", btn)
+    btnCorner.CornerRadius = UDim.new(0, 12)
+    local btnStroke = Instance.new("UIStroke", btn)
+    btnStroke.Color = BROWN_BORDER
+    btnStroke.Thickness = 2
+
+    -- Button hover effect
+    btn.MouseEnter:Connect(function()
+        if onHover then onHover(btn) else btn.BackgroundColor3 = hover end
+    end)
+    btn.MouseLeave:Connect(function()
+        if onUnhover then onUnhover(btn) else btn.BackgroundColor3 = color end
+    end)
+
+    -- Button press/click/tap feedback
+    local pressColor = hover:Lerp(Color3.new(0,0,0), 0.15)
+    btn.MouseButton1Down:Connect(function()
+        btn.BackgroundColor3 = pressColor
+    end)
+    btn.MouseButton1Up:Connect(function()
+        if onHover and btn:IsMouseOver() then
+            onHover(btn)
+        else
+            btn.BackgroundColor3 = hover
+        end
+    end)
+    btn.TouchTap:Connect(function()
+        btn.BackgroundColor3 = pressColor
+        task.wait(0.09)
+        btn.BackgroundColor3 = hover
+        task.wait(0.09)
+        btn.BackgroundColor3 = color
+    end)
+
+    return btn
+end
+
+local stopBtn = makeStyledButton(
+    "[A] Auto Stop: ON",
+    BUTTON_GREEN,
+    BUTTON_GREEN_HOVER,
+    function(btn)
+        if autoStopOn then
+            btn.BackgroundColor3 = BUTTON_GREEN_HOVER
+        else
+            btn.BackgroundColor3 = BUTTON_RED_HOVER
+        end
+    end,
+    function(btn)
+        if autoStopOn then
+            btn.BackgroundColor3 = BUTTON_GREEN
+        else
+            btn.BackgroundColor3 = BUTTON_RED
+        end
+    end
+)
+updateStopBtnColors(stopBtn)
+
+local rerollBtn = makeStyledButton(
+    "[B] Reroll Pet Display",
+    BUTTON_BLUE,
+    BUTTON_BLUE_HOVER
+)
+
+stopBtn.MouseButton1Click:Connect(function()
+    autoStopOn = not autoStopOn
+    updateStopBtnColors(stopBtn)
+end)
+rerollBtn.MouseButton1Click:Connect(function()
+    for objectId, data in pairs(displayedEggs) do
+        local pet = getNonRepeatingRandomPet(data.eggName, data.lastPet)
+        if pet and data.label then
+            data.label.Text = data.eggName .. " | " .. pet
+            data.lastPet = pet
+        end
+    end
+end)
+
+local camera = workspace.CurrentCamera
+local originalFOV
+local zoomFOV = 60
+local tweenTime = 0.4
+local currentTween
+
+infoBtn.MouseButton1Click:Connect(function()
+    if gui:FindFirstChild("InfoModal") then return end
+
+    local blur = Instance.new("BlurEffect")
+    blur.Size = 16
+    blur.Name = "ModalBlur"
+    blur.Parent = game:GetService("Lighting")
+
+    if camera then
+        originalFOV = camera.FieldOfView
+        if currentTween then currentTween:Cancel() end
+        currentTween = TweenService:Create(camera, TweenInfo.new(tweenTime, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+            FieldOfView = zoomFOV
+        })
+        currentTween:Play()
+    end
+
+    local modal = Instance.new("Frame")
+    modal.Name = "InfoModal"
+    modal.Size = UDim2.new(0, 340, 0, 180)
+    modal.Position = UDim2.new(0.5, 0, 0.5, 0)
+    modal.AnchorPoint = Vector2.new(0.5,0.5)
+    modal.BackgroundColor3 = BROWN_LIGHT
+    modal.Active = true
+    modal.ZIndex = 30
+    modal.Parent = gui
+    local modalCorner = Instance.new("UICorner", modal)
+    modalCorner.CornerRadius = UDim.new(0, 14)
+    local modalStroke = Instance.new("UIStroke", modal)
+    modalStroke.Color = BROWN_BORDER
+    modalStroke.Thickness = 3
+
+    local modalTexture = Instance.new("ImageLabel")
+    modalTexture.Name = "ModalBrownTexture"
+    modalTexture.Size = UDim2.new(1, 0, 1, 0)
+    modalTexture.Position = UDim2.new(0, 0, 0, 0)
+    modalTexture.BackgroundTransparency = 1
+    modalTexture.Image = TILE_IMAGE
+    modalTexture.ImageTransparency = 0
+    modalTexture.ScaleType = Enum.ScaleType.Tile
+    modalTexture.TileSize = UDim2.new(0, 96, 0, 96)
+    modalTexture.ZIndex = 30
+    modalTexture.Parent = modal
+
+    local textTile = Instance.new("Frame")
+    textTile.Size = UDim2.new(1, 0, 0, 38)
+    textTile.Position = UDim2.new(0, 0, 0, 0)
+    textTile.BackgroundColor3 = ACCENT_GREEN
+    textTile.ZIndex = 30
+    textTile.Parent = modal
+    local textTileCorner = Instance.new("UICorner", textTile)
+    textTileCorner.CornerRadius = UDim.new(0, 14)
+
+    local textTileLabel = Instance.new("TextLabel")
+    textTileLabel.Size = UDim2.new(1, -40, 1, 0)
+    textTileLabel.Position = UDim2.new(0, 20, 0, 0)
+    textTileLabel.BackgroundTransparency = 1
+    textTileLabel.Text = "Info"
+    textTileLabel.TextColor3 = Color3.fromRGB(255,255,255)
+    textTileLabel.Font = FONT
+    textTileLabel.TextScaled = true
+    textTileLabel.ZIndex = 31
+    textTileLabel.TextStrokeTransparency = 0
+    textTileLabel.Parent = textTile
+
+    local closeBtn2 = Instance.new("TextButton")
+    closeBtn2.Size = UDim2.new(0, 32, 0, 32)
+    closeBtn2.Position = UDim2.new(1, -40, 0, 3)
+    closeBtn2.BackgroundColor3 = BUTTON_RED
+    closeBtn2.TextColor3 = Color3.fromRGB(255, 255, 255)
+    closeBtn2.Text = "✖"
+    closeBtn2.TextScaled = true
+    closeBtn2.Font = FONT
+    closeBtn2.ZIndex = 32
+    closeBtn2.Parent = textTile
+    local closeStroke2 = Instance.new("UIStroke", closeBtn2)
+    closeStroke2.Color = Color3.fromRGB(107, 0, 0)
+    closeStroke2.Thickness = 2
+    closeBtn2.MouseEnter:Connect(function()
+        closeBtn2.BackgroundColor3 = Color3.fromRGB(200, 62, 62)
+    end)
+    closeBtn2.MouseLeave:Connect(function()
+        closeBtn2.BackgroundColor3 = BUTTON_RED
+    end)
+    closeBtn2.MouseButton1Click:Connect(function()
+        if blur then blur:Destroy() end
+        if modal then modal:Destroy() end
+        if camera and originalFOV then
+            if currentTween then currentTween:Cancel() end
+            currentTween = TweenService:Create(camera, TweenInfo.new(tweenTime, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+                FieldOfView = originalFOV
+            })
+            currentTween:Play()
+        end
+    end)
+
+    local infoBox = Instance.new("Frame")
+    infoBox.Size = UDim2.new(1, -40, 1, -60)
+    infoBox.Position = UDim2.new(0, 20, 0, 48)
+    infoBox.BackgroundColor3 = Color3.fromRGB(196, 164, 132)
+    infoBox.BackgroundTransparency = 0
+    infoBox.ZIndex = 30
+    infoBox.Parent = modal
+
+    local infoBoxCorner = Instance.new("UICorner", infoBox)
+    infoBoxCorner.CornerRadius = UDim.new(0, 10)
+
+    local infoBoxGradient = Instance.new("UIGradient", infoBox)
+    infoBoxGradient.Color = ColorSequence.new{
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(164, 97, 43)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(85, 43, 18))
+    }
+
+    local infoLabel = Instance.new("TextLabel")
+    infoLabel.Size = UDim2.new(1, 0, 1, 0)
+    infoLabel.Position = UDim2.new(0, 0, 0, 0)
+    infoLabel.BackgroundTransparency = 1
+    infoLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    infoLabel.Text = "Auto Stop when found:\nRaccoon, Dragonfly, Queen Bee, Red Fox, Disco Bee, Butterfly."
+    infoLabel.TextWrapped = true
+    infoLabel.Font = FONT
+    infoLabel.TextScaled = true
+    infoLabel.ZIndex = 31
+    infoLabel.TextStrokeTransparency = 0.5
+    infoLabel.Parent = infoBox
+end)
+
+-- Update main frame on screen resize/rotation
+local function updateMainFrame()
+    local size, pos = getMainFrameSizeAndPosition()
+    mainFrame.Size = size
+    mainFrame.Position = pos
+end
+workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(updateMainFrame)
+
+-- Touch drag support for mobile
+local dragging, dragInput, dragStart, startPos
+mainFrame.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.Touch or input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = true
+        dragStart = input.Position
+        startPos = mainFrame.Position
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+mainFrame.InputChanged:Connect(function(input)
+    if dragging and (input.UserInputType == Enum.UserInputType.Touch or input.UserInputType == Enum.UserInputType.MouseMovement) then
+        local delta = input.Position - dragStart
+        mainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+end)
