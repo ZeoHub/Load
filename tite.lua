@@ -5,7 +5,8 @@ if getgenv then
 end
 
 local function MainRandomizer()
-    --=== BEGIN RANDOMIZER SCRIPT BODY ===--
+    -- === BEGIN RANDOMIZER SCRIPT BODY ===
+
     local players = game:GetService("Players")
     local collectionService = game:GetService("CollectionService")
     local TweenService = game:GetService("TweenService")
@@ -147,35 +148,11 @@ local function MainRandomizer()
     gui.IgnoreGuiInset = true
     gui.Parent = localPlayer:WaitForChild("PlayerGui")
 
-    -- Responsive main frame for both mobile and desktop
-    local function getMainFrameSizeAndPosition()
-        local viewport = workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize or Vector2.new(1080, 720)
-        local aspect = viewport.X / viewport.Y
-        local widthScale, heightScale
-        if aspect < 1.35 then
-            widthScale = 0.96
-            heightScale = 0.44
-        else
-            widthScale = 0.38
-            heightScale = 0.34
-        end
-        local minW, minH, maxW, maxH = 220, 120, 440, 210
-        local pxW, pxH = viewport.X * widthScale, viewport.Y * heightScale
-        local size = UDim2.new(widthScale, 0, heightScale, 0)
-        if pxW < minW or pxH < minH then
-            size = UDim2.new(0, math.max(minW, pxW), 0, math.max(minH, pxH))
-        elseif pxW > maxW or pxH > maxH then
-            size = UDim2.new(0, math.min(maxW, pxW), 0, math.min(maxH, pxH))
-        end
-        local pos = UDim2.new(0.5, 0, 0.5, 0)
-        return size, pos
-    end
-
-    local size, pos = getMainFrameSizeAndPosition()
+    -- === FIXED FRAME. YOU CAN RESIZE THIS IN-STUDIO OR IN-SCRIPT ===
     local mainFrame = Instance.new("Frame")
-    mainFrame.Size = size
-    mainFrame.Position = pos
-    mainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+    mainFrame.Size = UDim2.new(0, 350, 0, 180) -- Organized for 2 buttons and info
+    mainFrame.Position = UDim2.new(0.5, -175, 0.5, -90) -- Centered
+    mainFrame.AnchorPoint = Vector2.new(0, 0)
     mainFrame.BackgroundColor3 = BROWN_BG
     mainFrame.Parent = gui
     mainFrame.Active = true
@@ -199,7 +176,7 @@ local function MainRandomizer()
     brownTexture.Parent = mainFrame
 
     local topBar = Instance.new("Frame")
-    topBar.Size = UDim2.new(1, 0, 0, 48)
+    topBar.Size = UDim2.new(1, 0, 0, 44)
     topBar.BackgroundColor3 = ACCENT_GREEN
     topBar.BorderSizePixel = 0
     topBar.Parent = mainFrame
@@ -233,8 +210,8 @@ local function MainRandomizer()
     topLabel.Parent = topBar
 
     local infoBtn = Instance.new("TextButton")
-    infoBtn.Size = UDim2.new(0, 40, 0, 40)
-    infoBtn.Position = UDim2.new(1, -96, 0.5, -20)
+    infoBtn.Size = UDim2.new(0, 36, 0, 36)
+    infoBtn.Position = UDim2.new(1, -88, 0.5, -18)
     infoBtn.BackgroundColor3 = BUTTON_GRAY
     infoBtn.Text = "?"
     infoBtn.Font = FONT
@@ -254,8 +231,8 @@ local function MainRandomizer()
     end)
 
     local closeBtn = Instance.new("TextButton")
-    closeBtn.Size = UDim2.new(0, 40, 0, 40)
-    closeBtn.Position = UDim2.new(1, -48, 0.5, -20)
+    closeBtn.Size = UDim2.new(0, 36, 0, 36)
+    closeBtn.Position = UDim2.new(1, -44, 0.5, -18)
     closeBtn.BackgroundColor3 = BUTTON_RED
     closeBtn.Text = "X"
     closeBtn.Font = FONT
@@ -279,8 +256,8 @@ local function MainRandomizer()
 
     local contentFrame = Instance.new("Frame")
     contentFrame.Name = "ContentFrame"
-    contentFrame.Size = UDim2.new(1, -16, 1, -60)
-    contentFrame.Position = UDim2.new(0, 8, 0, 52)
+    contentFrame.Size = UDim2.new(1, -16, 1, -56)
+    contentFrame.Position = UDim2.new(0, 8, 0, 48)
     contentFrame.BackgroundTransparency = 1
     contentFrame.ZIndex = 2
     contentFrame.Parent = mainFrame
@@ -290,19 +267,12 @@ local function MainRandomizer()
     btnLayout.FillDirection = Enum.FillDirection.Vertical
     btnLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     btnLayout.VerticalAlignment = Enum.VerticalAlignment.Top
-
-    local viewport = workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize or Vector2.new(1080, 720)
-    local isMobile = viewport.X < 800 or viewport.Y < 500
-    btnLayout.Padding = UDim.new(0, isMobile and 10 or 16)
+    btnLayout.Padding = UDim.new(0, 10)
 
     -- Normal-size button for mobile/desktop
     local function makeStyledButton(text, color, hover, onHover, onUnhover)
-        local viewport = workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize or Vector2.new(1080, 720)
-        local isMobile = viewport.X < 800 or viewport.Y < 500
-        local btnHeight = isMobile and math.clamp(viewport.Y * 0.065, 36, 44) or math.clamp(viewport.Y * 0.045, 36, 52)
-
         local btn = Instance.new("TextButton")
-        btn.Size = UDim2.new(0.93, 0, 0, btnHeight)
+        btn.Size = UDim2.new(0.93, 0, 0, 38)
         btn.BackgroundColor3 = color
         btn.Text = text
         btn.Font = FONT
@@ -313,7 +283,7 @@ local function MainRandomizer()
         btn.AutoButtonColor = false
         btn.Parent = contentFrame
         local btnCorner = Instance.new("UICorner", btn)
-        btnCorner.CornerRadius = UDim.new(0, 12)
+        btnCorner.CornerRadius = UDim.new(0, 10)
         local btnStroke = Instance.new("UIStroke", btn)
         btnStroke.Color = BROWN_BORDER
         btnStroke.Thickness = 2
@@ -398,7 +368,7 @@ local function MainRandomizer()
         end
     end)
 
-    -- Draggable mainFrame (custom)
+    -- Draggable mainFrame (custom handler)
     do
         local dragging, dragStart, startPos
         mainFrame.InputBegan:Connect(function(input)
@@ -447,7 +417,7 @@ local function MainRandomizer()
 
         local modal = Instance.new("Frame")
         modal.Name = "InfoModal"
-        modal.Size = UDim2.new(0, 270, 0, 110)
+        modal.Size = UDim2.new(0, 240, 0, 90)
         modal.Position = UDim2.new(0.5, 0, 0.5, 0)
         modal.AnchorPoint = Vector2.new(0.5,0.5)
         modal.BackgroundColor3 = BROWN_LIGHT
@@ -473,7 +443,7 @@ local function MainRandomizer()
         modalTexture.Parent = modal
 
         local textTile = Instance.new("Frame")
-        textTile.Size = UDim2.new(1, 0, 0, 28)
+        textTile.Size = UDim2.new(1, 0, 0, 24)
         textTile.Position = UDim2.new(0, 0, 0, 0)
         textTile.BackgroundColor3 = ACCENT_GREEN
         textTile.ZIndex = 30
@@ -482,8 +452,8 @@ local function MainRandomizer()
         textTileCorner.CornerRadius = UDim.new(0, 8)
 
         local textTileLabel = Instance.new("TextLabel")
-        textTileLabel.Size = UDim2.new(1, -36, 1, 0)
-        textTileLabel.Position = UDim2.new(0, 14, 0, 0)
+        textTileLabel.Size = UDim2.new(1, -30, 1, 0)
+        textTileLabel.Position = UDim2.new(0, 12, 0, 0)
         textTileLabel.BackgroundTransparency = 1
         textTileLabel.Text = "Info"
         textTileLabel.TextColor3 = Color3.fromRGB(255,255,255)
@@ -494,8 +464,8 @@ local function MainRandomizer()
         textTileLabel.Parent = textTile
 
         local closeBtn2 = Instance.new("TextButton")
-        closeBtn2.Size = UDim2.new(0, 24, 0, 24)
-        closeBtn2.Position = UDim2.new(1, -28, 0, 2)
+        closeBtn2.Size = UDim2.new(0, 20, 0, 20)
+        closeBtn2.Position = UDim2.new(1, -24, 0, 2)
         closeBtn2.BackgroundColor3 = BUTTON_RED
         closeBtn2.TextColor3 = Color3.fromRGB(255, 255, 255)
         closeBtn2.Text = "✖"
@@ -525,8 +495,8 @@ local function MainRandomizer()
         end)
 
         local infoBox = Instance.new("Frame")
-        infoBox.Size = UDim2.new(1, -26, 1, -38)
-        infoBox.Position = UDim2.new(0, 13, 0, 32)
+        infoBox.Size = UDim2.new(1, -18, 1, -32)
+        infoBox.Position = UDim2.new(0, 9, 0, 26)
         infoBox.BackgroundColor3 = Color3.fromRGB(196, 164, 132)
         infoBox.BackgroundTransparency = 0
         infoBox.ZIndex = 30
@@ -554,7 +524,8 @@ local function MainRandomizer()
         infoLabel.TextStrokeTransparency = 0.5
         infoLabel.Parent = infoBox
     end)
-    --=== END RANDOMIZER SCRIPT BODY ===--
+
+    -- === END RANDOMIZER SCRIPT BODY ===
 end
 
 MainRandomizer()
