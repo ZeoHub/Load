@@ -572,7 +572,7 @@ local Players = game:GetService("Players")
 local lp = Players.LocalPlayer
 lp.OnTeleport:Connect(function(state)
     if state == Enum.TeleportState.InQueue then
-        local scriptUrl = "https://pastebin.com/raw/YOUR_SCRIPT_ID_HERE" -- TODO: Replace with your raw script URL
+        local scriptUrl = "https://raw.githubusercontent.com/ZeoHub/GrowAGarden/refs/heads/main/Randomizer/EggESP.lua" -- TODO: Replace with your raw script URL
         if syn and syn.queue_on_teleport then
             syn.queue_on_teleport(('loadstring(game:HttpGet("%s"))()'):format(scriptUrl))
         elseif queue_on_teleport then
