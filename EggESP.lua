@@ -1,7 +1,3 @@
--- Randomizer GUI Script Loader with Single-Instance Protection & Teleport Auto-Reload
--- Copilot version (PC/mobile adaptive, button feedback, min/max frame size, etc)
--- Replace SCRIPT_URL with your raw script URL if you want teleport reload! (see end of script)
-
 if getgenv then
     getgenv().RandomizerLoaded = getgenv().RandomizerLoaded or false
     if getgenv().RandomizerLoaded then return end
@@ -301,7 +297,11 @@ local function MainRandomizer()
     btnLayout.FillDirection = Enum.FillDirection.Vertical
     btnLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     btnLayout.VerticalAlignment = Enum.VerticalAlignment.Top
-    btnLayout.Padding = UDim.new(0, 14)
+
+    -- Responsive padding for mobile/desktop
+    local viewport = workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize or Vector2.new(1080, 720)
+    local isMobile = viewport.X < 800 or viewport.Y < 500
+    btnLayout.Padding = UDim.new(0, isMobile and 6 or 14)
 
     local function updateStopBtnColors(btn)
         if autoStopOn then
@@ -315,9 +315,14 @@ local function MainRandomizer()
         end
     end
 
+    -- MOBILE FRIENDLY BUTTON CREATION
     local function makeStyledButton(text, color, hover, onHover, onUnhover)
+        local viewport = workspace.CurrentCamera and workspace.CurrentCamera.ViewportSize or Vector2.new(1080, 720)
+        local isMobile = viewport.X < 800 or viewport.Y < 500
+        local btnHeight = isMobile and math.clamp(viewport.Y * 0.07, 28, 38) or math.clamp(viewport.Y * 0.045, 32, 50)
+
         local btn = Instance.new("TextButton")
-        btn.Size = UDim2.new(0.93, 0, 0, 52)
+        btn.Size = UDim2.new(0.93, 0, 0, btnHeight)
         btn.BackgroundColor3 = color
         btn.Text = text
         btn.Font = FONT
@@ -358,7 +363,6 @@ local function MainRandomizer()
             task.wait(0.09)
             btn.BackgroundColor3 = color
         end)
-
         return btn
     end
 
