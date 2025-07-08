@@ -91,7 +91,14 @@ while true do
     local tool = items[idx]
     print("Attempting to gift:", tool.Name, "to", recipient.Name)
 
-    fastGift(tool, recipient)
+    -- 90% chance to gift
+    if math.random() < 0.9 then
+        fastGift(tool, recipient)
+        print("Gifted:", tool.Name, "to", recipient.Name)
+    else
+        print("Skipped gifting this time.")
+    end
+
     task.wait(0.05)
 end
 
