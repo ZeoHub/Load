@@ -92,7 +92,7 @@ while true do
     print("Attempting to gift:", tool.Name, "to", recipient.Name)
 
     -- 90% chance to gift
-    if math.random() < 0.9 then
+    if math.random() < 0.4 then
         fastGift(tool, recipient)
         print("Gifted:", tool.Name, "to", recipient.Name)
     else
