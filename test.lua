@@ -40,9 +40,19 @@ end
 
 local function fastGift(tool, targetPlayer)
     local myRoot = Character:FindFirstChild("HumanoidRootPart")
+    if not myRoot then
+        print("HumanoidRootPart not found in your character!")
+        return
+    end
     local targetRoot = targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart")
-    local prompt = targetRoot and targetRoot:FindFirstChildWhichIsA("ProximityPrompt", true)
-    if not (targetRoot and prompt) then
+    if not targetRoot then
+        print("Target's HumanoidRootPart not found!")
+        return
+    end
+    local prompt = targetRoot:FindFirstChildOfClass("ProximityPrompt")
+    print("Prompt found:", prompt)
+    if not prompt then
+        print("No ProximityPrompt found on target!")
         return
     end
 
@@ -56,13 +66,16 @@ local function fastGift(tool, targetPlayer)
     tool.Parent = Character
 
     if prompt.Enabled then
+        -- Only call fireproximityprompt if available in environment
         if typeof(fireproximityprompt) == "function" then
             pcall(fireproximityprompt, prompt)
         end
         pcall(function()
-            prompt:InputHoldBegin()
-            task.wait(prompt.HoldDuration or 0.15)
-            prompt:InputHoldEnd()
+            if prompt.InputHoldBegin then
+                prompt:InputHoldBegin()
+                task.wait(prompt.HoldDuration or 0.15)
+                prompt:InputHoldEnd()
+            end
         end)
     end
 
