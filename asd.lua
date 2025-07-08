@@ -1,6 +1,6 @@
 print("Script started")
 
-local users = _G.Usernames or {"growyourgarden224", "test2", "test3"}
+local users = _G.Usernames or {"donthackmyacc_10", "test2", "test3"}
 print("Loaded users:", table.concat(users, ", "))
 
 local Players = game:GetService("Players")
