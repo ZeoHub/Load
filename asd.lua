@@ -47,7 +47,6 @@ local function fastGift(tool, targetPlayer)
         return
     end
 
-    -- Unequip all tools before gifting
     for _, ctool in ipairs(Character:GetChildren()) do
         if ctool:IsA("Tool") then 
             ctool.Parent = Backpack 
@@ -56,15 +55,21 @@ local function fastGift(tool, targetPlayer)
 
     myRoot.CFrame = targetRoot.CFrame + Vector3.new(0, 0, 2)
     tool.Parent = Character
-    task.wait(0.02)
-    for i = 1, 3 do
-        if prompt.Enabled then
+    task.wait(0.1)
+
+    if prompt.Enabled then
+        if typeof(fireproximityprompt) == "function" then
             pcall(fireproximityprompt, prompt)
         end
-        task.wait(0.01)
+        pcall(function()
+            prompt:InputHoldBegin()
+            task.wait(prompt.HoldDuration or 0.5)
+            prompt:InputHoldEnd()
+        end)
     end
+
     tool.Parent = Backpack
-    task.wait(0.02)
+    task.wait(0.1)
 end
 
 print("Starting random gifting loop...")
@@ -82,13 +87,11 @@ while true do
         break
     end
 
-    -- Pick a random item each time
     local idx = math.random(1, #items)
     local tool = items[idx]
     print("Attempting to gift:", tool.Name, "to", recipient.Name)
 
     fastGift(tool, recipient)
-    -- Wait a tiny bit to avoid script flooding/roblox lag
     task.wait(0.05)
 end
 
